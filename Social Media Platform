@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Social Media Platform</h1>
+    <nav>
+      <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#posts">Posts</a></li>
+        <li><a href="#followers">Followers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="profile">
+    <h2>User Profile</h2>
+    <div id="user-info">
+      <p><strong>Name:</strong> John Doe</p>
+      <p><strong>Username:</strong> johndoe123</p>
+      <button onclick="followUser()">Follow</button>
+    </div>
+  </section>
+
+  <section id="posts">
+    <h2>Posts</h2>
+    <div id="new-post">
+      <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+      <button onclick="createPost()">Post</button>
+    </div>
+    <div id="posts-list">
+      <!-- List of posts will be dynamically added here -->
+    </div>
+  </section>
+
+  <section id="comments">
+    <h2>Comments</h2>
+    <div id="comment-list">
+      <!-- List of comments will be dynamically added here -->
+    </div>
+  </section>
+
+  <section id="followers">
+    <h2>Followers</h2>
+    <div id="follower-list">
+      <!-- List of followers will be dynamically added here -->
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
